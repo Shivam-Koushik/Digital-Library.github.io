@@ -1,0 +1,90 @@
+html,
+body {
+    height: 100%;
+}
+
+.container-fluid {
+    padding: 2px;
+}
+
+.card {
+    margin: 15px;
+    padding: 15px;
+    color: #000000;
+    font-weight: 600;
+    border-width: 8px;
+    border-color: #000000;
+    background-color: #fdfdff75;
+}
+
+.card-body {
+    padding: 10px 20px;
+}
+
+h4 {
+    margin-top: 50px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 2px solid rgb(86, 86, 237);
+    border-radius: 30px;
+    background-color: #23a2f6;
+}
+
+.input-daterange>input {
+    cursor: pointer;
+    border-radius: 3px !important;
+    text-align: inherit;
+}
+
+.form-radio {
+    padding-top: 6px;
+}
+
+.radio-inline {
+    font-weight: 500;
+}
+
+.form-check-input {
+    width: 25px;
+    height: 25px;
+    margin: 10px 10px 12px;
+    vertical-align: middle;
+}
+
+.input-group-text {
+    border-right: 0px;
+    background-color: #ffffff;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.input-username>.form-control {
+    border-left: 0px;
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.row {
+    margin: 10px;
+    padding: 10px;
+}
+
+.img-title {
+    display: none;
+}
+
+a#btn {
+    color: white;
+    border: 2px solid #f09819;
+    background-color: #f09819;
+    border-radius: 5px;
+    margin-left: 550px;
+    font-size: 25px;
+
+}
+
+@media (max-width: 767px) {
+    .img-title {
+        display: block;
+    }
+}

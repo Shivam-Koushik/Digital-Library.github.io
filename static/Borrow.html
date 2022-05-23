@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow</title>
+    <link rel="stylesheet"href="./CSS File/main.css">
+    <link rel="stylesheet"href="./CSS File/Borrow.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="content">
+            <h2>BigBrighter</h2>
+            <h2>BigBrighter</h2>
+        </div>
+
+        <ul class="nav">
+            <p id="clock">8:10:45></p>
+        </ul>
+    </header>
+
+    <section class="box">
+        <video src="https://media.istockphoto.com/videos/male-hand-taking-an-old-book-from-the-shelf-video-id501075672"
+            autoplay muted loop>please connect to the internet</video>
+    <div class="container-fluid">
+        <h4 class="card-title text-center">Borrow Form </h4>
+        <div class="card">
+            <img src="" class="img-fluid img-title" alt="" id="img-title">
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="first_name">First Name</label>
+                            <input type="text" class="form-control" id="first_name" />
+                        </div>
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="middle_name">Middle Name</label>
+                            <input type="text" class="form-control" id="middle_name" />
+                        </div>
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" />
+                        </div>
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="gender">Gender</label>
+                            <div>
+                                <label class="radio-inline">
+                                    <input id="Male" name="gender" type="radio" class="form-check-input">Male
+                                </label>
+                                <label class="radio-inline">
+                                    <input id="Male" name="gender" type="radio" class="form-check-input">Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="username" class="form-label">Username</label>
+                            <div class="input-group input-username">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="username" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        </div>
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="birth_date" class="form-label">Birth Date</label>
+                            <div class="input-daterange input-group">
+                                <input type="text" class="form-control" id="birth_date" placeholder="mm/dd/yyyy">
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="phone_number" class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="phone_number" placeholder="(999) 999 9999">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Main St">
+                        </div>
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="Town_City" class="form-label">Town/City</label>
+                            <input type="text" class="form-control" id="Town_City" placeholder="">
+                        </div>
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" class="form-control" id="country" placeholder="">
+                        </div>
+                        <div class="form-group col-lg-3 col-md-6 col-sm-12">
+                            <label for="zip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="zip_code" placeholder="00000" minlength="5"
+                                maxlength="5">
+                            </div>
+                        </div>
+                        <hr>
+                    </form>
+                  <a href="./Books pdf/pdf6.pdf" , id="btn">submit</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <script src="./JavaScript File/clock.js"> </script>
+
+    <script>
+        
+        $(".input-daterange").datepicker({
+            todayBtn: "linked",
+            autoclose: true,
+            todayHighlight: true,
+            toggleActive: true
+        });
+
+        $("#datepicker").datepicker({
+            autoclose: true,
+            todayHighlight: true
+        });
+
+        $("#phone").mask("(999) 999 9999");
+
+        $("#phone").on("focus click", function () {
+            $(this)[0].setSelectionRange(1, 1);
+        });
+
+    </script>
+
+</body>
+
+</html>
